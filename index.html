@@ -109,6 +109,26 @@
   footer{padding:48px 24px;text-align:center;border-top:1px solid var(--border)}
   footer img{height:20px;margin:0 auto 10px;opacity:.7}
   footer p{font-size:.78rem;color:var(--text-d)}
+
+  /* light section (Bloco 02) */
+  :root{ --lbg:#FAF8F5; --ltext:#14161A; --ltext-m:rgba(20,22,26,.68); --ltext-d:rgba(20,22,26,.5); --lcard:#FFFFFF; --lborder:rgba(20,22,26,.10); --pl-dark:#C15600; }
+  section.light{background:var(--lbg);color:var(--ltext)}
+  section.light .block-num{color:var(--pl-dark)}
+  section.light .block-num::before{background:var(--pl-dark)}
+  section.light h1.title{color:var(--ltext)}
+  section.light h1.title .acc{color:var(--pl-dark)}
+  section.light .lede{color:var(--ltext-m)}
+  section.light .tbl-wrap{background:var(--lcard);border-color:var(--lborder);box-shadow:0 1px 3px rgba(20,22,26,.05)}
+  section.light .tbl-hdr{border-color:var(--lborder)}
+  section.light .tbl-hdr-title{color:var(--ltext)}
+  section.light th{color:var(--pl-dark);border-color:var(--lborder)}
+  section.light td{color:var(--ltext-m);border-color:var(--lborder)}
+  section.light td.strong{color:var(--ltext)}
+  section.light tr.total td{background:rgba(193,86,0,.07);color:var(--ltext)}
+  section.light tbody tr:not(.total):hover{background:rgba(20,22,26,.025)}
+  section.light .radius-note{background:#FFF4E5;border-color:rgba(193,86,0,.22);color:var(--ltext-m)}
+  section.light .radius-note b{color:var(--ltext)}
+  section.light .radius-note .lbl{color:var(--pl-dark)}
 </style>
 </head>
 <body>
@@ -165,20 +185,20 @@
 </section>
 
 <!-- ══ BLOCO 02 — PLANO DE MÍDIA ══ -->
-<section id="bloco02">
+<section id="bloco02" class="light">
   <div class="block-num">Bloco 02 &middot; Plano de Mídia</div>
   <h1 class="title">R$15.000,00 em 13 dias.<br>100% Meta. <span class="acc">Do teste ao resultado em escala.</span></h1>
-  <p class="lede">Com a tese validada, a proposta é simples: usar os 13 dias entre 03/08 e 15/08/2026 para transformar o aprendizado do teste em presença consistente nas praças de maior prioridade do Pará, mantendo 100% do investimento no canal que já provou eficiência acima do benchmark de mercado.</p>
+  <p class="lede">Com a tese validada, a proposta é simples: usar os 13 dias entre 03/08 e 15/08/2026 para transformar o aprendizado do teste em presença consistente nas praças de maior prioridade do Pará, mantendo 100% do investimento no canal que já provou eficiência acima do benchmark de mercado. Os três objetivos abaixo rodam ao mesmo tempo, não em fases separadas: o Meta Ads otimiza a entrega de cada um dentro do orçamento dedicado, em paralelo, durante toda a janela de 03/08 a 15/08.</p>
 
   <div class="tbl-wrap">
-    <div class="tbl-hdr"><div class="tbl-hdr-title">Distribuição por Fase</div></div>
+    <div class="tbl-hdr"><div class="tbl-hdr-title">Distribuição por Objetivo &middot; simultânea, 03/08 a 15/08</div></div>
     <div class="tbl-scroll"><table>
-      <thead><tr><th>Fase</th><th>Período</th><th>Objetivo</th><th>% Verba</th><th>Valor</th><th>Indicador</th></tr></thead>
+      <thead><tr><th>Objetivo</th><th>% Verba</th><th>Valor</th><th>Indicador</th></tr></thead>
       <tbody>
-        <tr><td class="strong">Fase 1</td><td>03/08 a 07/08 (5 dias)</td><td>Alcance e recall regional</td><td>30%</td><td class="strong">R$4.500,00</td><td>Impressões, CPM</td></tr>
-        <tr><td class="strong">Fase 2</td><td>08/08 a 11/08 (4 dias)</td><td>Engajamento com criativos vencedores</td><td>35%</td><td class="strong">R$5.250,00</td><td>Comentários, compartilhamentos, custo/engaj.</td></tr>
-        <tr><td class="strong">Fase 3</td><td>12/08 a 15/08 (4 dias)</td><td>Crescimento de perfil e conversão</td><td>35%</td><td class="strong">R$5.250,00</td><td>Novos seguidores, visitas ao perfil</td></tr>
-        <tr class="total"><td colspan="3">Total &middot; 13 dias &middot; 100% Meta</td><td>100%</td><td>R$15.000,00</td><td>-</td></tr>
+        <tr><td class="strong">Alcance e recall regional</td><td>30%</td><td class="strong">R$4.500,00</td><td>Impressões, CPM</td></tr>
+        <tr><td class="strong">Engajamento com criativos vencedores</td><td>35%</td><td class="strong">R$5.250,00</td><td>Comentários, compartilhamentos, custo/engaj.</td></tr>
+        <tr><td class="strong">Crescimento de perfil e conversão</td><td>35%</td><td class="strong">R$5.250,00</td><td>Novos seguidores, visitas ao perfil</td></tr>
+        <tr class="total"><td>Total &middot; 13 dias &middot; 100% Meta</td><td>100%</td><td>R$15.000,00</td><td>-</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -186,20 +206,20 @@
   <div class="tbl-wrap">
     <div class="tbl-hdr"><div class="tbl-hdr-title">Distribuição Geográfica por Praça</div></div>
     <div class="tbl-scroll"><table>
-      <thead><tr><th>Praça</th><th>Municípios</th><th>Prioridade</th><th>Fases</th><th>% Budget</th><th>Valor</th></tr></thead>
+      <thead><tr><th>Praça</th><th>Municípios</th><th>Prioridade</th><th>% Budget</th><th>Valor</th></tr></thead>
       <tbody>
-        <tr><td class="strong">Praça 1 &middot; Núcleo RMB</td><td>Belém, Ananindeua, Marituba, Barcarena</td><td>Máxima</td><td>1, 2 e 3</td><td>40%</td><td class="strong">R$6.000,00</td></tr>
-        <tr><td class="strong">Praça 2 &middot; Baixo Amazonas</td><td>Santarém, Monte Alegre, Oriximiná</td><td>Alta</td><td>1, 2 e 3</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
-        <tr><td class="strong">Praça 3 &middot; Sudeste/Sudoeste</td><td>Parauapebas, Marabá, Itaituba, Altamira</td><td>Alta</td><td>1, 2 e 3</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
-        <tr><td class="strong">Praça 4 &middot; Interior disperso</td><td>Castanhal, Breves, Abaetetuba + municípios pequenos do interior</td><td>Média (raio)</td><td>1, 2 e 3</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
-        <tr class="total"><td colspan="4">Total</td><td>100%</td><td>R$15.000,00</td></tr>
+        <tr><td class="strong">Praça 1 &middot; Núcleo RMB</td><td>Belém, Ananindeua, Marituba, Barcarena</td><td>Máxima</td><td>40%</td><td class="strong">R$6.000,00</td></tr>
+        <tr><td class="strong">Praça 2 &middot; Baixo Amazonas</td><td>Santarém, Monte Alegre, Oriximiná</td><td>Alta</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
+        <tr><td class="strong">Praça 3 &middot; Sudeste/Sudoeste</td><td>Parauapebas, Marabá, Itaituba, Altamira</td><td>Alta</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
+        <tr><td class="strong">Praça 4 &middot; Interior disperso</td><td>Castanhal, Breves, Abaetetuba + municípios pequenos do interior</td><td>Média (raio)</td><td>20%</td><td class="strong">R$3.000,00</td></tr>
+        <tr class="total"><td colspan="3">Total</td><td>100%</td><td>R$15.000,00</td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="radius-note">
     <span class="lbl">Segmentação por raio &middot; Praça 4</span>
-    O Pará tem mais de uma dezena de municípios pequenos e geograficamente dispersos que não sustentam campanhas próprias sem esgotar o público rapidamente. Para esses casos, a entrega será configurada por <b>raio de alcance no Meta Ads</b>: um círculo de cobertura ao redor da sede de cada município, em vez de uma segmentação municipal fechada. Isso permite: <b>(1)</b> captar o público urbano de cada cidade sem depender de base populacional grande, <b>(2)</b> reduzir a frequência excessiva sobre o mesmo público pequeno, e <b>(3)</b> redistribuir a entrega automaticamente entre as cidades do cluster, otimizando o custo por resultado da fase.
+    O Pará tem mais de uma dezena de municípios pequenos e geograficamente dispersos que não sustentam campanhas próprias sem esgotar o público rapidamente. Para esses casos, a entrega será configurada por <b>raio de alcance no Meta Ads</b>: um círculo de cobertura ao redor da sede de cada município, em vez de uma segmentação municipal fechada. Isso permite: <b>(1)</b> captar o público urbano de cada cidade sem depender de base populacional grande, <b>(2)</b> reduzir a frequência excessiva sobre o mesmo público pequeno, e <b>(3)</b> redistribuir a entrega automaticamente entre as cidades do cluster, otimizando o custo por resultado.
   </div>
 
   <div class="tbl-wrap">
@@ -219,7 +239,7 @@
     Os segmentos acima são referência de mensagem e criativo, não configuração de público no ad set. A segmentação real será feita pela própria otimização do Meta Ads (públicos amplos/Advantage+), por dois motivos: <b>(1)</b> é a recomendação do próprio Meta para maximizar entrega e eficiência de custo, e <b>(2)</b> em campanha de conteúdo político a plataforma não permite segmentação por interesse, só por localização, idade e gênero. A segmentação, portanto, é por criativo: o algoritmo identifica, dentro de cada praça, quem responde melhor a cada peça publicada, em vez de um detalhamento manual de público.
   </div>
 
-  <p class="lede" style="margin-bottom:0">A distribuição de 30% Alcance / 35% Engajamento / 35% Conversão segue a mesma lógica que já funcionou no teste: primeiro construir volume de reconhecimento com custo baixo, depois consolidar esse reconhecimento em interação real, e só então converter esse público aquecido em seguidores e visitas qualificadas ao perfil.</p>
+  <p class="lede" style="margin-bottom:0">Os três objetivos, alcance, engajamento e conversão, correm juntos ao longo dos 13 dias: enquanto a entrega constrói reconhecimento com custo baixo, o mesmo público já vai sendo trabalhado para interação e, em paralelo, para seguir o perfil. É o Meta Ads otimizando as três frentes ao mesmo tempo, dentro do orçamento dedicado a cada uma.</p>
 </section>
 
 <!-- ══ BLOCO 03 — SUGESTÕES CRIATIVAS ══ -->
@@ -261,7 +281,7 @@
   <div class="close-steps">
     <div class="close-step"><div class="close-step-num">1</div><div class="close-step-txt">Escalar o criativo "O açaí é cultura" e produzir variações no mesmo formato regional.</div></div>
     <div class="close-step"><div class="close-step-num">2</div><div class="close-step-txt">Ativar as 4 praças geográficas definidas, com raio de alcance configurado para os municípios menores do interior.</div></div>
-    <div class="close-step"><div class="close-step-num">3</div><div class="close-step-txt">Reportar semanalmente o desempenho por fase e por praça, com abertura para realocar verba entre as praças de melhor custo por resultado.</div></div>
+    <div class="close-step"><div class="close-step-num">3</div><div class="close-step-txt">Reportar semanalmente o desempenho por objetivo e por praça, com abertura para realocar verba entre as praças de melhor custo por resultado.</div></div>
     <div class="close-step"><div class="close-step-num">4</div><div class="close-step-txt">Preparar, ao final dos 13 dias, uma recomendação de escala para as praças de expansão e interior, caso os indicadores se confirmem.</div></div>
   </div>
 
